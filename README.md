@@ -1,7 +1,7 @@
 # EnsemblSync
 
 ## Description
-GeneSync is an automated data pipeline that extracts and processes gene data using the Ensembl REST API.
+EnsemblSync is an automated data pipeline that extracts and processes gene data using the Ensembl REST API.
 
 ## Features
 - Extracts gene information from Ensembl

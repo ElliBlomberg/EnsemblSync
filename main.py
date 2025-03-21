@@ -1,8 +1,8 @@
 from extract import get_gene_info
-from database import create_database
+import database as db
 
 #set upthe database
-create_database()
+db.create_database()
 
 #example gene name
 gene_name = "BRCA1"
@@ -14,3 +14,10 @@ species = "homo_sapiens"
 gene_info = get_gene_info(gene_name, species)
 
 print(gene_info)
+
+db.insert_gene_data(gene_info)
+
+column = ["gene_name", "gene_id", "species", "description", "location", "biotype"]
+species = "homo_sapiens"
+dbresult = db.get_genedata_from_db(column[2], species)
+print(dbresult)
